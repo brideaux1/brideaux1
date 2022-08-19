@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @brideaux1
 - 👀 I’m interested in bees!
-- 🌱 I’m currently learning html, css, JavaScript!
+- 🌱 I’m currently learning html, css, JavaScript, Python, and SQL!
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
