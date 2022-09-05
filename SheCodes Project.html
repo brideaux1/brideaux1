@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meditation</title>
+    <style>
+      body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      }
+      h1 {
+        text-align: center;
+        color: coral;
+      }
+      h2 {
+        text-align: center;
+        color: coral;
+        border: 1px solid coral;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      p {
+        text-align: center;
+        color: coral;
+        line-height: 1.5;
+      }
+      button {
+        display: block;
+        margin: 10px auto;
+        border-radius: 9px;
+        padding: 15px 30px;
+        background-color: coral;
+        color: aquamarine;
+        font-size: 23px;
+        font-weight: bold;
+        border: none;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0 4);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      .footer {
+        text-align: center;
+        line-height: normal;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><strong>Meditate and Chill!</strong></h1>
+      <h2><em>Relax!</em></h2>
+      <img
+        src="https://images.everydayhealth.com/images/emotional-health/meditation/a-complete-guide-to-meditation-722x406.jpg"
+        alt="Meditation"
+      />
+      <hr />
+      <p>
+        <span style="color: green; font-weight: bold">"Meditation"</span> is a
+        practice in which an individual uses a technique – such as mindfulness,
+        or focusing the mind on a particular object, thought, or activity – to
+        train attention and awareness, and achieve a mentally clear and
+        emotionally calm and stable state. Meditation is practiced in numerous
+        religious traditions.
+      </p>
+      <br />
+      <button class="meditate-button">🧘🏽‍♀️Meditate and Chill</button>
+
+      <p class="footer">
+        This page was built by
+        <a href="https://github.com/brideaux1/brideaux1" target="_blank"
+          >Britney Rideaux</a
+        >
+      </p>
+    </div>
+    <script>
+      function meditate() {
+        let name = prompt("What is your name?");
+        let age = prompt("What is your age?");
+        if (age < 18) {
+          alert("Thanks for starting your journey!");
+        } else {
+          alert("Thanks for continuing your journey!");
+        }
+
+        alert("Thank you " + name + "!");
+      }
+      let meditatebutton = document.querySelector(".meditate-button");
+      meditatebutton.addEventListener("click", meditate);
+    </script>
+  </body>
+</html>

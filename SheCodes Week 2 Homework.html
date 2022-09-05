@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today's Weather</title>
+    <style>
+      img {
+        height: 60px;
+      }
+      h1 {
+        text-align: center;
+        color: darkgreen;
+        font-family: "Lucida Grande";
+      }
+      li {
+        list-style: none;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: 0 auto;
+        font-size: 25px;
+      }
+
+      li:hover {
+        background: #fffbef;
+      }
+
+      .name {
+        text-align: center;
+        font-size: 35px;
+        color: darkgreen;
+      }
+
+      button {
+        padding: 15px 20px;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 40px;
+        margin: 30px auto;
+        border: 1px solid green;
+        background: transparent;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background-color: darkgreen;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img
+        src="https://i.pinimg.com/originals/6f/8f/0a/6f8f0a1379f61a433b90c34e95789927.jpg"
+      />
+    </center>
+    <h1>Currently 88° in Opelousas, LA</h1>
+    <p><center>74&deg;/94°</center></p>
+    <ul>
+      <li>
+        <h3>🌧Tomorrow</h3>
+        <p>71° / <strong>88°</strong></p>
+      </li>
+      <li>
+        <h3>☀️Monday</h3>
+        <p>72° / <strong>90°</strong></p>
+      </li>
+      <li>
+        <h3>☀️ Tuesday</h3>
+        <p>75° / <strong>92°</strong></p>
+      </li>
+    </ul>
+    <br />
+    <div>
+      <button>Change City</button>
+    </div>
+    <p class="name">Coded by Britney Rideaux</p>
+    <script>
+      function changeCity() {
+        let city = prompt("What city do you live in?");
+        let temperature = prompt("What temperature is it?");
+        let heading = document.querySelector("h1");
+        if (temperature < 0) {
+          heading.innerHTML =
+            "☹️<br />Currently " + temperature + "°C in " + city;
+        } else {
+          heading.innerHTML =
+            "😄<br />Currently " + temperature + "°C in " + city;
+        }
+      }
+      let changeButton = document.querySelector("button");
+      changeButton.addEventListener("click", changeCity);
+    </script>
+  </body>
+</html>
